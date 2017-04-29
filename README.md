@@ -1,16 +1,16 @@
-# PHP CodeSniffer and WordPress Coding Standards with VS Code
+# PHP CodeSniffer and Joomla Coding Standards with VS Code
 
-_Last Updated 2016-11-17 by @tommcfarlin_
+_Last Updated 2016-11-17_
 
-This guide is meant to provide all of the steps necessary to easily get up and running with PHP CodeSniffer, the WordPress Coding Standard ruleset, and Visual Studio Code.
+This guide is meant to provide all of the steps necessary to easily get up and running with PHP CodeSniffer, the Joomla Coding Standard ruleset, and [Visual Studio Code](https://code.visualstudio.com/).
 
 ![Visual Studio Code](https://camo.githubusercontent.com/531b31da15d5925c915c6b6ceea25c55171aa139/687474703a2f2f642e70722f692f537344552b)
 
-All of the resources used in this guide are linked at the bottom. This guide is also licensed [MIT](https://github.com/tommcfarlin/phpcs-wpcs-vscode/blob/master/LICENSE). If you'd like to contribute, then please feel free to open issues or issue pull requests. I'll be happy to merge them and also add your username to [CONTRIBUTING](https://github.com/tommcfarlin/phpcs-wpcs-vscode/blob/master/CONTRIBUTING.md).
+All of the resources used in this guide are linked at the bottom. This guide is also licensed [MIT](https://github.com/photodude/phpcs-wpcs-vscode/blob/master/LICENSE). If you'd like to contribute, then please feel free to open issues or issue pull requests. I'll be happy to merge them and also add your username to [CONTRIBUTING](https://github.com/photodude/phpcs-wpcs-vscode/blob/master/CONTRIBUTING.md).
 
 If you're looking for a corresponding blog post, please see [this page](https://tommcfarlin.com/php-codesniffer-in-visual-studio-code).
 
-As always, don't forget to checkout the [CHANGELOG](https://github.com/tommcfarlin/phpcs-wpcs-vscode/blob/master/CHANGELOG.md) to track everything that's changed since the initial release of this guide.
+As always, don't forget to checkout the [CHANGELOG](https://github.com/photodude/phpcs-wpcs-vscode/blob/master/CHANGELOG.md) to track everything that's changed since the initial release of this guide.
 
 ______
 
@@ -75,7 +75,7 @@ Composer is a dependency manager tracking local dependencies of your projects an
 See https://getcomposer.org/ for more information.
 ```
 
-With Composer globally installed, you can now install the WordPress Coding Standards rules.
+With Composer globally installed, you can now install the Joomla Coding Standards rules.
 
 ## 3. Installing PHP CodeSniffer
 
@@ -84,32 +84,32 @@ For the purposes of this document, we're installing PHP CodeSniffer on a project
 From the integrated terminal within Visual Studio Code, enter the following command:
 
 ```
-$ composer require "squizlabs/php_codesniffer=*"
+$ composer require "squizlabs/php_codesniffer=^2.8.1"
 ```
 
-This will create `composer.json`, tell it where to locate the PHP CodeSniffer, and install it in a `vendor` directory. Once this is done, we need the WordPress Coding Standard ruleset.
+This will create `composer.json`, tell it where to locate the PHP CodeSniffer, and install it in a `vendor` directory. Once this is done, we need the Joomla Coding Standard ruleset.
 
-## 4. Installing the WordPress Coding Standards Rules
+## 4. Installing the Joomla Coding Standards Rules
 
 I recommend placing the rules in a directory you can refer to often. Personally, I use a `projects` directory in my Dropbox directory to manage all of my work because it obviously provides backups automatically (and no, I don't recommend storing secure files there).
 
 From within your directory of choice, say `dropbox/projects`, enter the following command in the terminal:
 
 ```
-$ composer create-project wp-coding-standards/wpcs:dev-master --no-dev
+$ composer create-project joomla/coding-standards:dev-master --no-dev
 ```
 
-This will create a `wpcs` directory in your `projects` directory and it makes it esay to tell each project where the WordPress Coding Standards are stored because, remember, we'll be using Composer on a project-by-project basis.
+This will create a `coding-standards` directory in your `projects` directory and it makes it esay to tell each project where the Joomla Coding Standards are stored because, remember, we'll be using Composer on a project-by-project basis.
 
-## 5. Tell PHPCS About WPCS
+## 5. Tell PHPCS About The Joomla Coding Standards
 
 From within Visual Studio's integrated terminal, make sure that you're in your project's directory and then issue the following command:
 
 ```
-$ ./vendor/bin/phpcs --config-set installed_paths /path/to/dropbox/projects/wpcs
+$ ./vendor/bin/phpcs --config-set installed_paths /path/to/dropbox/projects/coding-standards
 ```
 
-And this will tell your project's copy of PHPCS where the WordPress Coding Standards are.
+And this will tell your project's copy of PHPCS where the Joomla Coding Standards are.
 
 ## 6. Update User Settings
 
@@ -122,11 +122,11 @@ Make sure the file looks like the following (though you may need to tweak based 
 {
     // PHPCS
     "phpcs.enable":   true,
-    "phpcs.standard": "WordPress",
+    "phpcs.standard": "Joomla",
 }
 ```
 
-And this will enable PHPCS and will also tell it to use the standard WordPress ruleset. If this doesn't start working on the code your have automatically, then restart Visual Studio Code.
+And this will enable PHPCS and will also tell it to use the standard Joomla ruleset. If this doesn't start working on the code your have automatically, then restart Visual Studio Code.
 ___
 
 ## Resources
@@ -135,5 +135,6 @@ ___
 - [Getting Started](https://getcomposer.org/doc/00-intro.md)
 - [The Latest Composer Snapshot](https://getcomposer.org/composer.phar)
 - [PHP CodeSniffer](https://github.com/squizlabs/PHP_CodeSniffer)
-- [WordPress Coding Standards](https://github.com/WordPress-Coding-Standards/WordPress-Coding-Standards)
-- [My corresponding blog post](https://tommcfarlin.com/php-codesniffer-in-visual-studio-code)
+- [Joomla Coding Standards](https://github.com/joomla/coding-standards)
+- [@tommcfarlin's corresponding blog post for WordPress](https://tommcfarlin.com/php-codesniffer-in-visual-studio-code)
+- [@tommcfarlin's WordPress guide which this was forked from](https://github.com/tommcfarlin/phpcs-wpcs-vscode)
