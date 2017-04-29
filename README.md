@@ -6,11 +6,11 @@ This guide is meant to provide all of the steps necessary to easily get up and r
 
 ![Visual Studio Code](https://camo.githubusercontent.com/531b31da15d5925c915c6b6ceea25c55171aa139/687474703a2f2f642e70722f692f537344552b)
 
-All of the resources used in this guide are linked at the bottom. This guide is also licensed [MIT](https://github.com/photodude/phpcs-wpcs-vscode/blob/master/LICENSE). If you'd like to contribute, then please feel free to open issues or issue pull requests. I'll be happy to merge them and also add your username to [CONTRIBUTING](https://github.com/photodude/phpcs-wpcs-vscode/blob/master/CONTRIBUTING.md).
+All of the resources used in this guide are linked at the bottom. This guide is also licensed [MIT](https://github.com/photodude/phpcs-vscode/blob/master/LICENSE). If you'd like to contribute, then please feel free to open issues or issue pull requests. I'll be happy to merge them and also add your username to [CONTRIBUTING](https://github.com/photodude/phpcs-vscode/blob/master/CONTRIBUTING.md).
 
 If you're looking for a corresponding blog post, please see [this page](https://tommcfarlin.com/php-codesniffer-in-visual-studio-code).
 
-As always, don't forget to checkout the [CHANGELOG](https://github.com/photodude/phpcs-wpcs-vscode/blob/master/CHANGELOG.md) to track everything that's changed since the initial release of this guide.
+As always, don't forget to checkout the [CHANGELOG](https://github.com/photodude/phpcs-vscode/blob/master/CHANGELOG.md) to track everything that's changed since the initial release of this guide.
 
 ______
 
