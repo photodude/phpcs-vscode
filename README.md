@@ -2,7 +2,7 @@
 
 _Last Updated 2017-04-29_
 
-This guide is meant to provide all of the steps necessary to easily get up and running with PHP CodeSniffer, the Joomla Coding Standard ruleset, and [Visual Studio Code](https://code.visualstudio.com/).
+This guide is meant to provide all of the steps necessary to easily get up and running with [PHP CodeSniffer](https://github.com/squizlabs/PHP_CodeSniffer), the [Joomla Coding Standard ruleset](https://github.com/joomla/coding-standards), and [Visual Studio Code](https://code.visualstudio.com/).
 
 ![Visual Studio Code](https://camo.githubusercontent.com/531b31da15d5925c915c6b6ceea25c55171aa139/687474703a2f2f642e70722f692f537344552b)
 
