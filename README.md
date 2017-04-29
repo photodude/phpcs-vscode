@@ -1,6 +1,6 @@
 # PHP CodeSniffer and Joomla Coding Standards with VS Code
 
-_Last Updated 2016-11-17_
+_Last Updated 2017-04-29_
 
 This guide is meant to provide all of the steps necessary to easily get up and running with PHP CodeSniffer, the Joomla Coding Standard ruleset, and [Visual Studio Code](https://code.visualstudio.com/).
 
